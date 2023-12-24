@@ -1,0 +1,195 @@
+/* @media (max-width:375px){
+
+    h3{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width:925px) {
+    h3{
+        font-size:15px ;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+        
+    }
+   
+    .header{
+        width: 1000px;
+    }
+    button{
+        width: 5px;
+        height: 5px;
+        font-size: 12px;
+        border-radius: 100%;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+@media (max-width:600px) {
+    h3{
+        font-size:12px ;
+        
+    }
+    .showcase{
+        position: relative;
+        right: 500px;
+        top: 500px;
+        right: 100%;
+        
+    }
+    .lap{
+        height: 50px;
+        width: 600px;
+    }
+    button{
+        width: 5px;
+        height: 5px;
+        font-size: 10px;
+        border-radius: 100%;
+    }
+    h1{
+        font-size: 22px;
+    }
+} */
+
+body {
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display:flex ;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.up{
+    height: 20px;
+    width:20px;
+}
+.details{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 5em;
+}
+.uper{
+    width: 300px;
+    justify-content: space-evenly;
+    display: flex;
+}
+.up:hover{
+    scale:1.3 ;
+}
+h1{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.len{
+    background-color: black;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3:hover{
+    scale: 1.2;
+}
+.showcase{
+    width:90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    
+
+    gap: 2em;
+    margin-top: 100px;
+
+    /* position: relative;
+    
+    right: 730px;
+    object-fit: contain;
+    top: 300px; */
+    
+}
+.lap1,.lap2,.lap3,.lap4{
+    height: 150px;
+    width: 150px;
+    z-index: -1;
+    display: flex;
+    margin-inline: auto;
+   
+    
+}
+
+.n:hover{
+    scale: 1.2;
+
+}
+
+
+button{
+    width: 90px;
+    height: 30px;
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    transition-delay: 0.1s;
+    border: 2px solid white;
+    color: white;
+    
+}
+.offer {
+    position: relative;
+}
+.offer::after {
+    content: "23% off";
+    background-color: rgb(45, 176, 45);
+    color: white;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.showcase > div {
+    width: 250px;
+    border: 1px solid gray;
+    padding: 1em;
+    border-radius: 20px;
+}
+.showcase > div:hover{
+    scale: 1.02;
+    box-shadow: 2px 2px 3px grey;
+}
+@media (max-width: 400px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 15px;
+    height: ;
+    background-color: gray;
+    color: white;
+    position: relative;
+    top: 15px;
+}
